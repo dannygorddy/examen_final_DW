@@ -1,0 +1,222 @@
+:root {
+  --color-principal: #0f1e50;  /* Azul oscuro profesional */
+  --color-secundario: #007b5e; /* Verde esperanza (acción social) */
+  --color-claro: #f4f9f9;
+  --color-contraste: #ffffff;
+  --fuente-principal: 'Segoe UI', Tahoma, sans-serif;
+}
+
+/* General */
+body {
+  font-family: var(--fuente-principal);
+  background-color: var(--color-claro);
+  color: #333;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+  color: var(--color-principal);
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.05rem;
+}
+
+/* NAVBAR */
+.navbar {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.3rem;
+  letter-spacing: 0.5px;
+}
+
+.navbar-dark .nav-link.active {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(to right, #e0f7fa, #fefefe);
+  padding: 60px 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+header .btn {
+  font-size: 1.1rem;
+  padding: 10px 20px;
+}
+
+/* SECCIONES */
+main section {
+  margin-bottom: 60px;
+}
+
+/* TARJETAS */
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+  color: var(--color-secundario);
+  font-weight: bold;
+}
+
+/* BOTONES */
+.btn-primary {
+  background-color: var(--color-secundario);
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #005f47;
+}
+
+.btn-outline-primary {
+  border-color: var(--color-secundario);
+  color: var(--color-secundario);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--color-secundario);
+  color: white;
+}
+
+/* FORMULARIO */
+form .form-control {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+form .form-control:focus {
+  border-color: var(--color-secundario);
+  box-shadow: 0 0 5px rgba(0, 123, 94, 0.5);
+}
+
+/* LISTAS DE PERFIL */
+.list-group-item {
+  background-color: #f9f9f9;
+  border: none;
+  border-left: 4px solid var(--color-secundario);
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+/* IMÁGENES */
+img {
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* FOOTER */
+footer {
+  background-color: var(--color-principal);
+  color: white;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+/* Efecto de aparición (fade-in) */
+.fade-in-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+}
+
+.fade-in-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.img-hover-animada {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* sombra inicial */
+  border-radius: 10px;
+}
+
+.img-hover-animada:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* sombra más profunda */
+}
+.card-overlay .card-img {
+  height: 300px;
+  object-fit: cover;
+  filter: brightness(0.6);
+  transition: transform 0.4s ease;
+}
+
+.card-overlay .card-img:hover {
+  transform: scale(1.05);
+  filter: brightness(0.8);
+}
+
+.card-overlay .card-img-overlay {
+  background: rgba(0, 0, 0, 0.4); /* Fondo semitransparente oscuro */
+  border-radius: 0 0 10px 10px;
+}
+.card-img-bottom {
+  object-fit: cover;
+  height: 200px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+/* Estilo personalizado para FAQ */
+.accordion-button {
+  background-color: #f8f9fa;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-button:hover {
+  background-color: #e0f0ff;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-body {
+  background-color: #fff;
+  font-size: 15px;
+  color: #333;
+}
+.card:hover {
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+.card-modulo {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.card-modulo:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(69, 69, 69, 0.2);
+}
+
+.frase-motivadora {
+  font-style: italic;
+  font-weight: bold;
+  color: #041e45;
+  font-family: 'Georgia', serif;
+  margin-top: 10px;
+}
+

@@ -1,11 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Programa de Desarrollo Social y Comunitario</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="estilos/estilos.css" />
+
+  <!-- Accesibilidad básica -->
+  <meta name="description" content="Conoce nuestro nuevo programa académico de Desarrollo Social y Comunitario. Transformamos realidades con educación de impacto.">
 </head>
+
 <body>
-    
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary" aria-label="Barra de navegación principal">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Facultad Social</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+        aria-controls="menu" aria-expanded="false" aria-label="Mostrar menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="programa.html">Programa</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Encabezado principal -->
+  <header class="bg-light text-center p-5" role="banner">
+    <h1 class="display-5 fw-bold fade-in-on-scroll">Transforma comunidades, cambia vidas</h1>
+    <p class="lead fade-in-on-scroll">Descubre el Programa de Desarrollo Social y Comunitario que impulsa el cambio desde las personas.</p>
+    <a href="programa.html" class="btn btn-primary mt-3 fade-in-on-scroll">Ver el Plan de Estudios</a>
+  </header>
+
+  <!-- Sección de presentación -->
+  <main class="container py-5" role="main">
+    <section class="row align-items-center fade-in-on-scroll">
+      <div class="col-lg-6 mb-4">
+        <img src="imagenes/estudiantes-campo.jpg" class="img-fluid img-hover-animada" alt="Estudiantes trabajando en comunidad rural">
+      </div>
+      <div class="col-lg-6">
+    <div class="card shadow-sm border-start border-5 " style="background-color: #e4f0fa;">
+    <div class="card-body">
+      <h2 class="card-title">¿Por qué elegir este programa?</h2>
+      <ul class="list-unstyled">
+        <li>📘 Formación en desarrollo humano, gestión social y participación ciudadana.</li>
+        <li>🌎 Prácticas reales en comunidades rurales y urbanas.</li>
+        <li>🤝 Alianzas con ONGs, municipios y organizaciones sociales.</li>
+        <li>🎓 Docentes con experiencia en proyectos de impacto.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+    </section>
+
+    <!-- Beneficios destacados -->
+    <section class="text-center mt-5 fade-in-on-scroll">
+  <h2 class="mb-4">Beneficios que te conectan con tu vocación</h2>
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card h-100 shadow-lg">
+        <div class="card-body">
+          <h5 class="card-title">🌱 Enfoque Humanista</h5>
+          <p class="card-text">Formación integral que combina teoría, práctica y sensibilidad social.</p>
+        </div>
+        <img src="imagenes/beneficio1.jpg" class="card-img-bottom" alt="Estudiantes en formación humanista">
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card h-100 shadow-lg">
+        <div class="card-body">
+          <h5 class="card-title">🌍 Educación Intercultural</h5>
+          <p class="card-text">Aprende a trabajar respetando la diversidad cultural del Perú.</p>
+        </div>
+        <img src="imagenes/beneficio2.jpg" class="card-img-bottom" alt="Diversidad cultural en el aula">
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card h-100 shadow-lg">
+        <div class="card-body">
+          <h5 class="card-title">💼 Proyectos con impacto</h5>
+          <p class="card-text">Participa desde el primer ciclo en acciones reales en comunidades vulnerables.</p>
+        </div>
+        <img src="imagenes/beneficio3.webp" class="card-img-bottom" alt="Estudiantes en proyectos comunitarios">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center p-4" role="contentinfo">
+    <p class="mb-0">&copy; 2025 Facultad de Ciencias Sociales - Universidad Continental</p>
+    <p class="mb-0">Sitio desarrollado por Susan Torres - Proyecto final de Diseño Web</p>
+  </footer>
+
+  <!-- Botón volver arriba -->
+  <button id="btnVolverArriba" class="btn btn-secondary" title="Volver arriba"
+    style="display: none; position: fixed; bottom: 20px; right: 20px; z-index: 1000;">
+    ↑
+  </button>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
