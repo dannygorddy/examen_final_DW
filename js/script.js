@@ -1,4 +1,3 @@
-// Validación del formulario en contacto.html
 const form = document.getElementById("formularioContacto");
 if (form) {
   form.addEventListener("submit", function (event) {
@@ -6,11 +5,9 @@ if (form) {
   event.stopPropagation();
 
   if (form.checkValidity()) {
-    // Mostrar mensaje de éxito
     const mensaje = document.getElementById("mensajeExito");
     mensaje.style.display = "block";
 
-    // Opcional: ocultar el mensaje después de 4 segundos
     setTimeout(() => {
       mensaje.style.display = "none";
     }, 4000);
@@ -23,8 +20,7 @@ if (form) {
 });
 
 }
-// Botón "Volver arriba"
-// Botón "Volver arriba"
+
 const btnUp = document.getElementById("btnVolverArriba");
 
 if (btnUp) {
@@ -41,9 +37,7 @@ if (btnUp) {
   });
 }
 
-console.log("Script cargado");
-console.log(btnUp); // ¿Lo detecta?
-// Efecto de aparición con scroll (fade-in)
+
 const elementos = document.querySelectorAll(".fade-in-on-scroll");
 
 const observador = new IntersectionObserver((entradas) => {

@@ -1,6 +1,6 @@
 :root {
-  --color-principal: #0f1e50;  /* Azul oscuro profesional */
-  --color-secundario: #007b5e; /* Verde esperanza (acción social) */
+  --color-principal: #0f1e50; 
+  --color-secundario: #007b5e; 
   --color-claro: #f4f9f9;
   --color-contraste: #ffffff;
   --fuente-principal: 'Segoe UI', Tahoma, sans-serif;
@@ -30,7 +30,7 @@ p {
 }
 
 .navbar-brand {
-  font-size: 1.5rem;  /* 🔹 Ajusta el tamaño, por ejemplo 1.3rem o 1.4rem */
+  font-size: 1.5rem;  
   font-weight: bold;
   color: #f8f9fa !important;
   display: flex;
@@ -137,7 +137,7 @@ footer {
   padding: 20px;
   font-size: 0.9rem;
 }
-/* Efecto de aparición (fade-in) */
+
 .fade-in-on-scroll {
   opacity: 0;
   transform: translateY(20px);
@@ -150,13 +150,13 @@ footer {
 }
 .img-hover-animada {
   transition: transform 0.4s ease, box-shadow 0.4s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* sombra inicial */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
   border-radius: 10px;
 }
 
 .img-hover-animada:hover {
   transform: translateY(-8px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* sombra más profunda */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
 }
 .card-overlay .card-img {
   height: 300px;
@@ -171,7 +171,7 @@ footer {
 }
 
 .card-overlay .card-img-overlay {
-  background: rgba(0, 0, 0, 0.4); /* Fondo semitransparente oscuro */
+  background: rgba(0, 0, 0, 0.4); 
   border-radius: 0 0 10px 10px;
 }
 .card-img-bottom {
@@ -180,7 +180,6 @@ footer {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
 }
-/* Estilo personalizado para FAQ */
 .accordion-button {
   background-color: #f8f9fa;
   font-weight: bold;
@@ -251,7 +250,7 @@ footer {
 
 .navbar-nav .nav-link:hover {
   background-color: #ffffff33;
-  color: #ffd700 !important; /* Amarillo dorado */
+  color: #ffd700 !important; 
 }
 
 .navbar-nav .nav-link.active {
@@ -274,8 +273,8 @@ footer {
   text-align: center;
 }
 .titulo-video {
-  font-size: 3rem; /* Aumentamos el tamaño */
-  font-weight: 700; /* Más grueso */
+  font-size: 3rem;
+  font-weight: 700;
   color: white !important;
   text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
   border-bottom: 3px solid #fefefe;
