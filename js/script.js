@@ -2,14 +2,26 @@
 const form = document.getElementById("formularioContacto");
 if (form) {
   form.addEventListener("submit", function (event) {
-    if (!form.checkValidity()) {
-      event.preventDefault();
-      event.stopPropagation();
-    } else {
-      alert("Gracias por contactarnos. ¡Te responderemos pronto! 🌟");
-    }
+  event.preventDefault();
+  event.stopPropagation();
+
+  if (form.checkValidity()) {
+    // Mostrar mensaje de éxito
+    const mensaje = document.getElementById("mensajeExito");
+    mensaje.style.display = "block";
+
+    // Opcional: ocultar el mensaje después de 4 segundos
+    setTimeout(() => {
+      mensaje.style.display = "none";
+    }, 4000);
+
+    form.reset();
+    form.classList.remove("was-validated");
+  } else {
     form.classList.add("was-validated");
-  });
+  }
+});
+
 }
 // Botón "Volver arriba"
 // Botón "Volver arriba"

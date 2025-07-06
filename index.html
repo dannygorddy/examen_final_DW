@@ -15,23 +15,28 @@
 
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary" aria-label="Barra de navegación principal">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Facultad Social</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
-        aria-controls="menu" aria-expanded="false" aria-label="Mostrar menú">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary" aria-label="Menú principal">
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+      <img src="imagenes/logo-continental.png" alt="Logo Universidad Continental" style="height: 80px;">
+      <span class="fw-bold  d-none d-sm-inline">Facultad de Ciencias Sociales<br><small>Universidad Continental</small></span>
+    </a>
 
-      <div class="collapse navbar-collapse" id="menu">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="programa.html">Programa</a></li>
-          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-        </ul>
-      </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+      aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="programa.html">Programa</a></li>
+        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
+
 
   <!-- Encabezado principal -->
   <header class="bg-light text-center p-5" role="banner">
@@ -39,7 +44,7 @@
     <p class="lead fade-in-on-scroll">Descubre el Programa de Desarrollo Social y Comunitario que impulsa el cambio desde las personas.</p>
     <a href="programa.html" class="btn btn-primary mt-3 fade-in-on-scroll">Ver el Plan de Estudios</a>
   </header>
-
+  
   <!-- Sección de presentación -->
   <main class="container py-5" role="main">
     <section class="row align-items-center fade-in-on-scroll">
@@ -60,6 +65,37 @@
   </div>
 </div>
     </section>
+<section class="bg-light py-5 fade-in-on-scroll">
+  <div class="container">
+    <h2 class="text-center mb-5">Tu camino en el programa</h2>
+    <div class="row g-4 text-center">
+      <div class="col-md-3">
+        <div class="p-3 border-start border-primary border-4">
+          <h5 class="fw-bold">1° - 2° Ciclo</h5>
+          <p class="small">Bases del desarrollo humano, derechos sociales e investigación participativa.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="p-3 border-start border-success border-4">
+          <h5 class="fw-bold">3° - 4° Ciclo</h5>
+          <p class="small">Diseño de proyectos sociales, intervención comunitaria e interculturalidad.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="p-3 border-start border-warning border-4">
+          <h5 class="fw-bold">5° Ciclo</h5>
+          <p class="small">Práctica preprofesional y acompañamiento en campo con ONGs o municipios.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="p-3 border-start border-danger border-4">
+          <h5 class="fw-bold">6° Ciclo</h5>
+          <p class="small">Seminario de investigación aplicada + trabajo de egreso y presentación final.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
     <!-- Beneficios destacados -->
     <section class="text-center mt-5 fade-in-on-scroll">
@@ -96,6 +132,73 @@
     </div>
   </div>
 </section>
+<section class="py-5 fade-in-on-scroll bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5">Noticias y actividades recientes</h2>
+
+    <!-- Noticia 1 -->
+    <div class="row mb-5 align-items-center">
+      <div class="col-md-5">
+        <img src="imagenes/noticia1.png" alt="Estudiantes en campaña comunitaria" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-md-7">
+        <h4 class="fw-bold">Estudiantes llevaron salud y alegría a Palccaraqui</h4>
+        <p class="text-muted small">Publicado el 25 de junio de 2025</p>
+        <p>
+          Un grupo de estudiantes del 3.º ciclo del programa de Desarrollo Social participó en una jornada
+          comunitaria en la zona rural de Palccaraqui. Durante la campaña se brindaron talleres de salud,
+          juegos educativos para niños y charlas sobre cuidado del agua. La actividad fue organizada en
+          coordinación con líderes locales y demostró el compromiso social de nuestros futuros egresados.
+        </p>
+      </div>
+    </div>
+
+    <!-- Noticia 2 -->
+    <div class="row mb-5 align-items-center flex-md-row-reverse">
+      <div class="col-md-5">
+        <img src="imagenes/noticia2.jpeg" alt="Foro de jóvenes en Cusco" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-md-7">
+        <h4 class="fw-bold">Foro de Juventud reunió a más de 200 participantes</h4>
+        <p class="text-muted small">Publicado el 12 de mayo de 2025</p>
+        <p>
+          Bajo el lema *"Liderazgo joven para transformar el Perú"*, estudiantes, docentes y líderes sociales
+          se reunieron en el campus Cusco para reflexionar sobre el papel de la juventud en el desarrollo
+          sostenible. El evento contó con panelistas invitados, talleres y dinámicas grupales. Fue una experiencia
+          enriquecedora que fortaleció la vocación y el sentido de propósito de los participantes.
+        </p>
+      </div>
+    </div>
+
+    <!-- Noticia 3 -->
+    <div class="row mb-5 align-items-center">
+      <div class="col-md-5">
+        <img src="imagenes/noticia3.jpg" alt="Premio a egresada" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-md-7">
+        <h4 class="fw-bold">Egresada recibe premio nacional por proyecto de impacto</h4>
+        <p class="text-muted small">Publicado el 28 de abril de 2025</p>
+        <p>
+          Ana Luisa Mamani, egresada de la promoción 2024, recibió el premio “Jóvenes que Transforman” del MIDIS
+          por su proyecto de alfabetización digital en comunidades altoandinas. Su propuesta ha sido reconocida
+          como innovadora y sostenible, mejorando la calidad de vida de más de 100 familias en zonas rurales.
+          “Este logro es también del programa que me formó”, declaró emocionada.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="bg-dark text-white py-5 text-center fade-in-on-scroll">
+  <div class="container">
+    <h2 class="mb-4 text-white  titulo-video">Conoce más sobre nuestro programa</h2>
+    <div class="ratio ratio-16x9">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/a-KFpDy5KI4?si=1i7bloJV7R6EYMvJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
 
 
 
@@ -105,7 +208,7 @@
   <!-- Footer -->
   <footer class="bg-dark text-white text-center p-4" role="contentinfo">
     <p class="mb-0">&copy; 2025 Facultad de Ciencias Sociales - Universidad Continental</p>
-    <p class="mb-0">Sitio desarrollado por Susan Torres - Proyecto final de Diseño Web</p>
+    <p class="mb-0">Sitio desarrollado por Danny Huaman Chavez - Proyecto final de Diseño Web</p>
   </footer>
 
   <!-- Botón volver arriba -->

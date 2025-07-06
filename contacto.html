@@ -15,21 +15,26 @@
 <body>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary" aria-label="Menú principal">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">Facultad Social</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
-        aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="menu">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="programa.html">Programa</a></li>
-          <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
-        </ul>
-      </div>
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+      <img src="imagenes/logo-continental.png" alt="Logo Universidad Continental" style="height: 80px;">
+      <span class="fw-bold  d-none d-sm-inline">Facultad de Ciencias Sociales<br><small>Universidad Continental</small></span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+      aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="programa.html">Programa</a></li>
+        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
 
   <!-- Encabezado -->
   <header class="bg-light text-center py-5">
@@ -66,6 +71,10 @@
 
               <button type="submit" class="btn btn-primary w-100">Enviar mensaje</button>
             </form>
+            <div id="mensajeExito" class="mensaje-exito" style="display: none;">
+  ✅ ¡Tu mensaje fue enviado con éxito! Nos pondremos en contacto contigo pronto.
+</div>
+
           </div>
         </div>
       </div>
@@ -178,17 +187,14 @@
         </div>
       </div>
     </div>
-
   </div>
 </section>
-
-
   </main>
 
   <!-- Footer -->
   <footer class="bg-dark text-white text-center p-4" role="contentinfo">
     <p class="mb-0">&copy; 2025 Facultad de Ciencias Sociales - Universidad Continental</p>
-    <p class="mb-0">Sitio desarrollado por Susan Torres - Proyecto final de Diseño Web</p>
+    <p class="mb-0">Sitio desarrollado por Danny Huaman Chavez - Proyecto final de Diseño Web</p>
   </footer>
 
   <!-- Botón volver arriba -->
