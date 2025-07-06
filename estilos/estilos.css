@@ -6,7 +6,6 @@
   --fuente-principal: 'Segoe UI', Tahoma, sans-serif;
 }
 
-/* General */
 body {
   font-family: var(--fuente-principal);
   background-color: var(--color-claro);
